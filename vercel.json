@@ -5,8 +5,8 @@
     }
   },
   "routes": [
-    { "src": "^/$", "dest": "user/index.php" },
-    { "src": "^/admin$", "dest": "admin/index.php" },
-    { "src": "/(.*)", "dest": "$1" }
+    { "src": "^/$", "dest": "/user/index.php" },
+    { "src": "^/admin$", "dest": "/admin/index.php" },
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
