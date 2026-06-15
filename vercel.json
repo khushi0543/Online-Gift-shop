@@ -5,10 +5,10 @@
     { "src": "**/*.js", "use": "@vercel/static" },
     { "src": "**/*.css", "use": "@vercel/static" },
     { "src": "**/*.png", "use": "@vercel/static" },
-    { "src": "**/*.jpg", "use": "@vercel/static" }
+    { "src": "**/*.jpg", "use": "@vercel/static" },
+    { "src": "**/*.jpeg", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/", "dest": "/user/index.php" },
-    { "src": "/(.*)", "dest": "/$1" }
+    { "src": "/", "dest": "/user/index.php" }
   ]
 }
