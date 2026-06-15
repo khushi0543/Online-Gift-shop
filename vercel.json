@@ -1,9 +1,11 @@
 {
-  "functions": {
-    "**/*.php": {
-      "runtime": "vercel-php@0.7.1"
-    }
-  },
+  "version": 2,
+  "builds": [
+    { "src": "user/**/*.php", "use": "vercel-php@0.7.1" },
+    { "src": "admin/**/*.php", "use": "vercel-php@0.7.1" },
+    { "src": "connect.php", "use": "vercel-php@0.7.1" },
+    { "src": "bs/**/*", "use": "@vercel/static" }
+  ],
   "routes": [
     { "src": "^/$", "dest": "/user/index.php" },
     { "src": "^/admin$", "dest": "/admin/index.php" },
